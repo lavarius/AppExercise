@@ -3,7 +3,7 @@
 //  Exercise App, practice app
 //
 //  Created by Mark Bartolo on 11/12/17..
-//  Copyright © 2017 mlavarius. All rights reserved..
+//  Copyright © 2017 mlavarius. All rights reserved...
 //
 // More comments
 
@@ -17,8 +17,8 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: Any) {
         tapCount += 1
-        if tapCount >= 20 {
-            theLabel.text = "You've tapped the button 20 times!"
+        if tapCount >= 15 {
+            theLabel.text = "You've tapped the button 15 times!"
         }
         print(tapCount)
     }
