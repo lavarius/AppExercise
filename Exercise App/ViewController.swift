@@ -20,8 +20,8 @@ class ViewController: UIViewController {
     //Actions are for actions
     @IBAction func buttonTapped(_ sender: Any) {
         
-        print(Text1.text!)
-        print(Text2.text!)
+        //doing string interpolation
+        theLabel.text = "The answer: \(Double(Text1.text!)! + Double(Text2.text!)!)"
     }
     
     override func viewDidLoad() {
