@@ -34,6 +34,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        //Changed UI backgroundColor to red
+        //view.backgroundColor = UIColor.red
+        
+        //Override theLabel text
+        theLabel.text = "New string from Hello World"
     }
     
     override func didReceiveMemoryWarning() {
