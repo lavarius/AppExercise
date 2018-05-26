@@ -13,13 +13,37 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var theLabel: UILabel!
     //Outlets are for text and stuff
-    @IBOutlet weak var Text1: UITextField!
+    @IBOutlet weak var TopTextField: UITextField!
+    @IBOutlet weak var BottomTextField: UITextField!
     
-    @IBOutlet weak var Text2: UITextField!
-    
+    @IBOutlet weak var additionSwitch: UISwitch!
     //Actions are for actions
     @IBAction func buttonTapped(_ sender: Any) {
         
+        let addition = additionSwitch.isOn
+        
+        if addition {
+            let sum = Double(TopTextField.text!)! + Double(BottomTextField.text!)!
+            
+            //String interpolation
+            theLabel.text = "\(TopTextField.text!) + \(BottomTextField.text!) = \(sum)"
+            //old way
+            //theLabel.text = "The sum is..." + String(sum)
+            
+            /*
+             print(TopTextField.text!) //get the information within the text box
+             print(BottomTextField.text!) //like above
+             */
+        } else {
+            let sum = Double(TopTextField.text!)! - Double(BottomTextField.text!)!
+            
+            //String interpolation
+            theLabel.text = "\(TopTextField.text!) - \(BottomTextField.text!) = \(sum)"
+        }
+        
+        
+        
+/*
         let addition = true
         
         if addition {
@@ -28,6 +52,7 @@ class ViewController: UIViewController {
         } else {
             theLabel.text = "The answer: \(Double(Text1.text!)! - Double(Text2.text!)!)"
         }
+ */
     }
     
     override func viewDidLoad() {

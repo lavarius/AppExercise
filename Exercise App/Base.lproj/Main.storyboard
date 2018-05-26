@@ -73,23 +73,29 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kae-20-0iI">
+                                <rect key="frame" x="163" y="355" width="51" height="31"/>
+                            </switch>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Uz6-57-jhF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="8.5" id="6Bn-Yd-hMz"/>
                             <constraint firstItem="4KB-9p-FQR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="8.5" id="8wc-gJ-Qod"/>
+                            <constraint firstItem="kae-20-0iI" firstAttribute="top" secondItem="Uz6-57-jhF" secondAttribute="bottom" constant="22.5" id="IS3-9w-E0D"/>
                             <constraint firstItem="Uz6-57-jhF" firstAttribute="top" secondItem="pA0-f2-GcT" secondAttribute="bottom" constant="30" id="Vfn-So-mig"/>
                             <constraint firstItem="0l4-qu-nzh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="122" id="XRk-3j-FpP"/>
                             <constraint firstItem="0l4-qu-nzh" firstAttribute="centerX" secondItem="4KB-9p-FQR" secondAttribute="centerX" id="hja-ld-vaG"/>
                             <constraint firstItem="4KB-9p-FQR" firstAttribute="top" secondItem="0l4-qu-nzh" secondAttribute="bottom" constant="20" id="mM5-6Z-URL"/>
                             <constraint firstItem="pA0-f2-GcT" firstAttribute="top" secondItem="4KB-9p-FQR" secondAttribute="bottom" constant="30" id="ofk-jN-7R2"/>
+                            <constraint firstItem="kae-20-0iI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qWC-48-fSy"/>
                             <constraint firstItem="pA0-f2-GcT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="8.5" id="vNW-HH-RDV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="Text1" destination="pA0-f2-GcT" id="q1O-V6-fzJ"/>
-                        <outlet property="Text2" destination="Uz6-57-jhF" id="CdF-z3-NAe"/>
+                        <outlet property="BottomTextField" destination="Uz6-57-jhF" id="x20-vv-sqp"/>
+                        <outlet property="TopTextField" destination="pA0-f2-GcT" id="rLW-cV-VJf"/>
+                        <outlet property="additionSwitch" destination="kae-20-0iI" id="Yzo-az-GaP"/>
                         <outlet property="theLabel" destination="LKy-hN-eME" id="IS2-QE-c8k"/>
                     </connections>
                 </viewController>
